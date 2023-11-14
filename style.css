@@ -1,0 +1,172 @@
+/* Importing Google Font - Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boarder-box;
+    font-family: 'Ubuntu';
+}
+body{
+    background: #e3f2de;
+    background-image: url('https://images.unsplash.com/photo-1453872302360-eed3c5f8ff66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+}
+h1 {
+    color: #fff; 
+    font-size: 1.75rem; 
+    text-align: center;
+    padding: 18px 0;
+    
+}
+.container{
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+.place-input{
+    width: 550px;
+}
+.place-input input{
+    height: 46px;
+    width: 90.5%;  
+    outline: none;
+    padding: 0 17px;
+    margin: 10px 0 20px 0;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    
+}
+.place-input input:focus {
+    padding: 0 16px;
+    border: 2px solid #ccc;
+  }
+.place-input .separator{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.place-input .separator::before{
+    content: "or";
+    font-size: 1.18rem;
+    padding: 0 15px;
+    margin-top: -4px;
+}
+.place-input button{
+    width: 100%;   
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: black;
+    background: #535353;
+    font-size: 1rem;
+    border-radius: 4px;
+    
+    transition: 0.2s ease;
+}
+.place-input .search-button{
+    background: powderblue;
+}
+.place-input .location-button{
+    background: powderblue;
+}
+.weather-information{
+    width: 100%;  
+}
+.current-weather{
+    color: #fff;
+    display: flex;
+    border-radius: 5px;
+    padding: 20px 70px 20px 20px;
+    margin-right: 70px;
+    background: transparent;
+    justify-content: space-between;
+}
+.current-weather h2{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.weather-information h4{
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.weather-information .days-forecast{
+    text-align: center;
+}
+.current-weather .icon img{
+    text-align: center;
+}
+.current-weather .icon img{
+    max-width: 120px;
+    margin-top: -15px;
+}
+.current-weather .icon h4{
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+.days-forecast h2{
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.days-forecast .weather-cards {    
+    display: flex;
+    gap: 20px;
+}
+.weather-cards .card{
+    list-style: none;
+    color: black;
+    padding: 18px 16px;
+    border-radius: 5px;
+    background: bisque;
+    width: calc(100%/5);
+}
+.weather-cards .card h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.weather-cards .card img{
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+@media (max-width: 1400px){
+    .weather-information .current-weather{
+        padding: 20px;
+    }
+    .weather-cards{
+        flex-wrap: wrap;
+    }
+    .weather-cards .card{
+        width: calc(100% / 4 - 15px);
+    }
+}
+@media (max-width: 1200px){
+    .weather-cards .card{
+        width: calc(100% / 3 - 15px);
+    }
+}
+@media (max-width: 950px){
+    .place-input{
+        width: 450px;
+    }
+    .weather-cards .card{
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width: 750px){
+    h1{
+        font-size: 1.45rem;
+        padding: 16px 0;
+    }
+    .container{
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .place-input{
+        width: 100%;
+    }
+    .weather-information h2{
+        font-size: 1.35rem;
+    }
+}
